@@ -1,4 +1,8 @@
 ﻿@page
-@model MyApp.Namespace.InfopaisModel
+@model InfopaisModel
 @{
 }
+
+<h1>@Model.Infopais.OfficialName</h1>
+<p><strong>@Model.CodigoPais</strong></p>
+<img src="@Model.Infopais.FlagUrl" alt="Bandeira do Pais" style="width:100%" />

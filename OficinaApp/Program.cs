@@ -16,6 +16,18 @@ builder.Services.AddHttpClient("RestCountries", c =>
         SslProtocols = System.Security.Authentication.SslProtocols.Tls12
     };
 });
+
+builder.Services.AddHttpClient("RestDragonBall", c =>
+{
+    c.BaseAddress = new Uri("https://dragonball-api.com/");
+})
+.ConfigurePrimaryHttpMessageHandler(() =>
+{
+    return new HttpClientHandler
+    {
+        SslProtocols = System.Security.Authentication.SslProtocols.Tls12
+    };
+});
 /** pedaço de codigo fim*/
 
 

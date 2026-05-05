@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OficinaApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0094152d805da873224b7d2ed5520aa2f20d48a3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7d88a44e0cd32bc71491326171c69ae377a80551")]
 [assembly: System.Reflection.AssemblyProductAttribute("OficinaApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OficinaApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

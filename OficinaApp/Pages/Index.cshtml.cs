@@ -12,7 +12,7 @@ namespace OficinaApp.Pages;
 public class IndexModel : PageModel
 {
     
-private readonly IHttpClientFactory _httpClientFactory;
+    private readonly IHttpClientFactory _httpClientFactory;
 
     public IndexModel(IHttpClientFactory httpClientFactory)
     {

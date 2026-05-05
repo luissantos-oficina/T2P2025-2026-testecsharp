@@ -9,3 +9,4 @@ dotnet run
 
 dotnet watch run
 
+dotnet new page -n Listdragonball -o Pages

@@ -1,0 +1,30 @@
+﻿@page
+@model ListdragonballModel
+@{
+    ViewData["Title"] = "Lista de Personagens do DragonBall";
+}
+
+
+<div class="text-center">
+    <h1 class="display-4">Lista de Personagens do DragonBall</h1>
+    <p>Eis a lista de personagens do DragonBall:</p>
+</div>
+
+@if (Model.Personagens?.Count > 0)
+{
+    <div style="display: flex; flex-wrap: wrap;">
+        @foreach (var personagem in Model.Personagens)
+        {
+            <div style="border: 1px solid #ccc; margin: 10px; padding: 10px; width: 200px; text-align: center;">
+                <img src="@personagem.image" alt="Imagem de @personagem.name" height="100" />
+                <p><strong>@personagem.name</strong></p>
+                <p>ID: @personagem.id</p>
+                <a asp-page="/Infodragonball" asp-route-cod="@personagem.id">Ver Info</a>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <p>ERRO : não temos lista </p>
+}
